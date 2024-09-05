@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Learning Portal</h1>
+    <nav>
+      <% if (!user) { %>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+      <% } else { %>
+        <a href="/profile">Profile</a>
+        <a href="/logout">Logout</a>
+      <% } %>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Empower Your Learning Journey</h2>
+      <p>Discover top-notch courses, track your progress, and achieve your learning goals with ease.</p>
+      <a href="/courses" class="btn-primary">Explore Courses</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+      <div class="feature">
+        <h3>Expert Instructors</h3>
+        <p>Learn from industry experts and experienced educators who are passionate about teaching.</p>
+      </div>
+      <div class="feature">
+        <h3>Interactive Learning</h3>
+        <p>Engage with interactive content and real-world projects to enhance your skills.</p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Scheduling</h3>
+        <p>Access course materials anytime, anywhere, and learn at your own pace.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial">
+        <p>"The Learning Portal transformed my career. The courses are well-structured, and the support is fantastic!"</p>
+        <span>- Sir Kelvin.</span>
+      </div>
+      <div class="testimonial">
+        <p>"I appreciate the flexibility of the courses. I could balance my learning with a full-time job."</p>
+        <span>- Nabu thouth.</span>
+      </div>
+      <div class="testimonial">
+        <p>"The interactive content made learning enjoyable and effective. Highly recommend this portal!"</p>
+        <span>- Taylor M.</span>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+      <h2>Ready to Start Learning?</h2>
+      <p>Join thousands of students who have already started their learning journey. Register today and begin your path to success!</p>
+      <a href="/register" class="btn-primary">Get Started</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Learning Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

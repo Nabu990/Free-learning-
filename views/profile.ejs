@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <h1>Profile of <%= user.name %></h1>
+  <h2>Enrolled Courses</h2>
+  <ul>
+    <% if (user.enrolledCourses.length > 0) { %>
+      <% user.enrolledCourses.forEach(course => { %>
+        <li><%= course %></li>
+      <% }) %>
+    <% } else { %>
+      <p>No enrolled courses</p>
+    <% } %>
+  </ul>
+  <a href="/courses">View Available Courses</a>
+  <a href="/logout">Logout</a>
+</body>
+</html>
